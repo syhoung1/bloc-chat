@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.rooms-list {
+    position: relative;
+    min-width: 200px;
+    height: 100%;
+    display: table;
+    background-color: rgba(100, 100, 100, .8);
+}
+
+.rooms-list .room {
+    display: block;
+    margin-left: .5em;
+    margin-bottom: 1em;
+    color: rgb(200, 200, 200);
+}
+
+.column {
+    position: absolute;
+    float: left;
+}
+
+.column.sixth {
+    width: 16.7%;
+}

@@ -1,1 +1,8 @@
-<h1>Home Page</h1>
+<section class="rooms-list column sixth">
+    <h1 class="title">Bloc Chat</h1>  
+    <table>
+        <tr class="room" ng-repeat="room in home.roomList.all">
+            <td>{{room.$value}}</td>
+        </tr>
+    </table>
+</section>
