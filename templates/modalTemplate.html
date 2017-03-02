@@ -1,0 +1,14 @@
+<div class='modal-content'>
+    <div class='modal-header'>
+        <h3 class='modal-title'>Create a new room</h3>
+    </div>
+    <div class='modal-body'>
+        <p class='input-group'>
+            <input ng-model='modal.name' type='text' class='form-control' name='add' placeholder='Room name here'>
+        </p>
+    </div>
+    <div class='modal-footer'>
+        <button class='button input-button' ng-click='modal.ok()' ng-disabled='modal.empty()'>OK</button>
+        <button class='button input-button' ng-click='modal.cancel()'>Cancel</button>
+    </div>
+</div>
