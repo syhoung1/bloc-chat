@@ -1,7 +1,7 @@
 (function () {
     function ModalInstanceCtrl($uibModalInstance, Room) {
         var modal = this;
-        
+
         modal.empty = function () {
             return !modal.name || !modal.name.length;
         };
@@ -10,7 +10,7 @@
             Room.addRooms(modal.name);
             $uibModalInstance.close();
         };
-        
+
         modal.cancel = function () {
             $uibModalInstance.dismiss('cancel');
         };

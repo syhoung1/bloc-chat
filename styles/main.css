@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    height: 100%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -27,6 +28,7 @@ body {
 }
 
 .button {
+    border: 0;
     border-radius: 2px 2px 2px 2px;
     background-color: white;
     border-color: gray;
@@ -41,23 +43,40 @@ body {
     text-decoration: none;
 }
 
-.rooms-list {
-    position: relative;
-    min-width: 200px;
-    height: 100%;
-    display: table;
-    background-color: rgba(100, 100, 100, .8);
-}
-
-.rooms-list .room {
-    display: block;
-    margin-left: .5em;
-    margin-bottom: 1em;
+.list {
+    width: 80%;
+    text-align: left;
+    background-color: rgba(80, 80, 80, 0);
     color: rgb(200, 200, 200);
 }
 
+.list:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.rooms-list {
+    top: 0;
+    bottom: 0;
+    float: left;
+    min-width: 200px;
+    height: 100%;
+    box-shadow: 2px 0 2px 3px;
+    background-color: rgba(100, 100, 100, .8);
+    display: table;
+}
+
+.messages-list {
+    top: 0;
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin-left: 3em;
+}
+
 .column {
-    position: absolute;
+    position: relative;
     float: left;
 }
 
@@ -69,3 +88,39 @@ body {
     width: 50%;
 }
 
+.messages-container {
+    margin-bottom: 3px;    
+}
+
+.messages {
+    display: block;
+    clear: right;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    text-align: left;
+    color: white;
+}
+
+.messages .name {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    box-sizing: border-box;
+    min-height: 35px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+
+.messages .content {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    box-sizing: border-box;
+    min-height: 35px;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.full {
+    width: 100%;
+}

@@ -1,9 +1,18 @@
 <section class="rooms-list column sixth">
     <h1 class="title">Bloc Chat</h1>
     <a class="bar button" ng-click="home.open()">hello</a>
-    <table>
-        <tr class="room" ng-repeat="room in home.roomList.all">
-            <td>{{room.$value}}</td>
+    <table class="full">
+        <tr class="bar button list" ng-repeat="room in home.roomList.all track by $index" ng-click="home.findRoom(home.roomList.all[$index].$id); home.getCurrentRoom(home.roomList.all[$index].$value)">
+            <td>{{ room.$value }}</td>
+        </tr>
+    </table>
+</section>
+<section class="messages-list">
+    <h1>{{ home.currentRoom }}</h1>
+    <table class="messages">
+        <tr ng-repeat="message in home.list">
+            <td class="messages name">{{ message.userName }} :</td>
+            <td class="messages content">{{ message.content }}</td>
         </tr>
     </table>
 </section>
