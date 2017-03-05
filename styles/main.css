@@ -60,7 +60,6 @@ body {
     top: 0;
     bottom: 0;
     float: left;
-    min-width: 200px;
     height: 100%;
     box-shadow: 2px 0 2px 3px;
     background-color: rgba(100, 100, 100, .8);
@@ -70,9 +69,10 @@ body {
 .messages-list {
     top: 0;
     float: left;
-    width: 70%;
+    width: 83%;
     height: 100%;
-    margin-left: 3em;
+    background-color: rgb(240, 240, 240);
+    padding-left: 5px;
 }
 
 .column {
@@ -83,6 +83,8 @@ body {
 .sixth {
     width: 16.7%;
 }
+
+
 
 .half {
     width: 50%;
@@ -121,4 +123,34 @@ body {
 
 .full {
     width: 100%;
+}
+
+.send-bar-container {
+    background-color: rgba(100, 0, 0, .5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 83%;
+    height: 100px;
+}
+
+.send-bar {
+    text-align: left;
+    height: 30px;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 35px;
+}
+
+.send-button {
+    height: 30px;
+    width: 5%;
+    background-color: white;
+    color: rgb(100, 100, 100);
+    border: 0;
+}
+
+.send-button:hover {
+    background-color: rgb(100, 100, 100);
+    color: white;
 }
