@@ -1,0 +1,13 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h2>Set your user name</h2>
+    </div>
+    <div class="modal-body">
+        <p class="input-group">
+            <input ng-model="cookies.name" class='form-control' placeholder="User name here">
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button class="button input-button" ng-click="cookies.ok()" ng-disabled="cookies.isEmpty()">Set name</button>
+    </div>
+</div>
