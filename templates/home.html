@@ -19,8 +19,10 @@
 <section class="message-compose">
     <div class="send-bar-container">
         <p>
-            <input ng-model="home.messageToSend" ng-submit="home.sendMessage()" class="send-bar" placeholder="say something">
-            <button class="send-button" ng-click="home.sendMessage()">send</button>
+            <form ng-submit="home.sendMessage()">
+                <input ng-model="home.messageToSend" class="send-bar" placeholder="say something">
+                <input class="send-button send-bar" type="submit" value="submit">
+            </form>
         </p>
     </div>
 </section>
